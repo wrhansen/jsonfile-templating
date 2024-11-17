@@ -1,0 +1,29 @@
+{
+  "fields": [
+    {
+      "name": "firstName",
+      "component": "text-field",
+      "label": "First Name"
+    },
+    {
+      "name": "lastName",
+      "component": "text-field",
+      "label": "Last Name"
+    },
+    {
+      "name": "gender",
+      "component": "select",
+      "label": "Gender",
+      "options": [
+        {
+          "value": "Male",
+          "label": "Male"
+        },
+        {
+          "value": "Female",
+          "label": "Female"
+        }
+      ]
+    }
+  ]
+}

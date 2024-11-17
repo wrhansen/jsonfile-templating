@@ -1,0 +1,29 @@
+{
+  "name": "drawer",
+  "component": "drawer",
+  "fields": [
+    {
+      "name": "drawerBody",
+      "component": "drawer-body",
+      "fields": [
+          {% include "Fields/firstName" %},
+          {% include "Fields/lastName" %},
+          {% include "Fields/gender" %}
+        ]
+    },
+    {
+      "name": "drawerFooter",
+      "component": "drawer-footer",
+      "fields": [
+        {
+          "name": "saveButton",
+          "component": "save-button"
+        },
+        {
+          "name": "cancelButton",
+          "component": "cancel-button"
+        }
+      ]
+    }
+  ]
+}

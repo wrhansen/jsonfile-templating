@@ -1,0 +1,7 @@
+{
+  "fields": [
+    {% include "Fields/firstName" %},
+    {% include "Fields/lastName" %},
+    {% include "Fields/gender" %}
+  ]
+}
