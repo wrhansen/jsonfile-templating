@@ -19,6 +19,10 @@ public class HomeController : Controller
         Template template2 = Template.Parse(jsonString3);
         ViewData["jsonString3"] = CleanUpJsonString(template2.Render());
 
+        var jsonString4 = System.IO.File.ReadAllText("Schemas/schema4.json");
+        Template template3 = Template.Parse(jsonString4);
+        ViewData["jsonString4"] = CleanUpJsonString(template3.Render());
+
         return View("site/index.cshtml");
     }
 

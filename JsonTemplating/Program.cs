@@ -6,13 +6,13 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-Template.FileSystem = new LocalFileSystem(Path.Combine(Directory.GetCurrentDirectory(), "Schemas/Templates"));
+Template.FileSystem = new LocalFileSystem(Path.Combine(Directory.GetCurrentDirectory(), "Schemas", "Templates"));
 
 app.UseStaticFiles();
 app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapControllerRoute(
+    _ = endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
 });

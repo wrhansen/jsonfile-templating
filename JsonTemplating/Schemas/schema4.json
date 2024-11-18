@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "name": "dollarField1",
+      "label": "Dollar Field1",
+      {% include "Snippets/dollar-format" %}
+    },
+    {
+      "name": "dollarField2",
+      "label": "Dollar Field2",
+      {% include "Snippets/dollar-format" %}
+    },
+    {
+      "name": "dollarField3",
+      "label": "Dollar Field3",
+      {% include "Snippets/dollar-format" %}
+    }
+  ]
+}
